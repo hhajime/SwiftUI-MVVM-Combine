@@ -16,13 +16,17 @@ https://github.com/hhajime/SwiftUI-MVVM-Combine/assets/36729917/2c2a5d6e-37bb-46
 ### Getting Started
 
 Clone this repository:
-```bash
+```
 1. Copy code
 git clone https://github.com/yourusername/SwiftUI-MVVM-Combine.git
 ```
+```
 2. Open the project in Xcode.
-3. change <_YOUR API KEY_> to real API(this app used API from the 'themoviedb')
+
+3. change <YOUR API KEY> to real API(this app used API from the 'themoviedb')
+
 4. Run the project in the iOS simulator or a real device.
+```
 
 ### Requirements
 iOS 14.0 or later
@@ -50,14 +54,13 @@ Combine
 ### Credit for:
 [Anurag Pandey](https://levelup.gitconnected.com/swiftui-mvvm-building-a-movie-list-app-ab8264357239)
 
+### License
+This project is available under the MIT license. See the LICENSE file for more info.
 
 Feel free to contribute, and contact the owner for any questions.
 
 hajime(JongMyeong Ha) 
 contact@hajime.guru
-
-License
-This project is available under the MIT license. See the LICENSE file for more info.
 
 This is a basic structure for a README. Feel free to add more sections or details according to your project's needs.
 You can check out more details or instructions in [here](https://levelup.gitconnected.com/swiftui-mvvm-building-a-movie-list-app-ab8264357239)
