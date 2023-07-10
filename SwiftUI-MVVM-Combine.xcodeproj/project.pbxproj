@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		C99017022A5C6E0E00FDD16E /* SwiftUI_MVVM_CombineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99017012A5C6E0E00FDD16E /* SwiftUI_MVVM_CombineApp.swift */; };
-		C99017042A5C6E0E00FDD16E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99017032A5C6E0E00FDD16E /* ContentView.swift */; };
+		C99017042A5C6E0E00FDD16E /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99017032A5C6E0E00FDD16E /* MovieListView.swift */; };
 		C99017062A5C6E0F00FDD16E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C99017052A5C6E0F00FDD16E /* Assets.xcassets */; };
 		C99017092A5C6E0F00FDD16E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C99017082A5C6E0F00FDD16E /* Preview Assets.xcassets */; };
+		C99017132A5C6E5E00FDD16E /* MoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99017122A5C6E5E00FDD16E /* MoviesModel.swift */; };
+		C99017152A5C6EBB00FDD16E /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99017142A5C6EBB00FDD16E /* MovieListViewModel.swift */; };
+		C99017172A5C6F3800FDD16E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99017162A5C6F3800FDD16E /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C99016FE2A5C6E0E00FDD16E /* SwiftUI-MVVM-Combine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-MVVM-Combine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C99017012A5C6E0E00FDD16E /* SwiftUI_MVVM_CombineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_MVVM_CombineApp.swift; sourceTree = "<group>"; };
-		C99017032A5C6E0E00FDD16E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C99017032A5C6E0E00FDD16E /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
 		C99017052A5C6E0F00FDD16E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C99017082A5C6E0F00FDD16E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C99017122A5C6E5E00FDD16E /* MoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesModel.swift; sourceTree = "<group>"; };
+		C99017142A5C6EBB00FDD16E /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
+		C99017162A5C6F3800FDD16E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,11 @@
 		C99017002A5C6E0E00FDD16E /* SwiftUI-MVVM-Combine */ = {
 			isa = PBXGroup;
 			children = (
+				C99017112A5C6E3400FDD16E /* ViewModel */,
+				C99017102A5C6E2D00FDD16E /* View */,
+				C990170F2A5C6E2400FDD16E /* Model */,
 				C99017012A5C6E0E00FDD16E /* SwiftUI_MVVM_CombineApp.swift */,
-				C99017032A5C6E0E00FDD16E /* ContentView.swift */,
+				C99017162A5C6F3800FDD16E /* ContentView.swift */,
 				C99017052A5C6E0F00FDD16E /* Assets.xcassets */,
 				C99017072A5C6E0F00FDD16E /* Preview Content */,
 			);
@@ -65,6 +74,30 @@
 				C99017082A5C6E0F00FDD16E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C990170F2A5C6E2400FDD16E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C99017122A5C6E5E00FDD16E /* MoviesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C99017102A5C6E2D00FDD16E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C99017032A5C6E0E00FDD16E /* MovieListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C99017112A5C6E3400FDD16E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C99017142A5C6EBB00FDD16E /* MovieListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C99017042A5C6E0E00FDD16E /* ContentView.swift in Sources */,
+				C99017042A5C6E0E00FDD16E /* MovieListView.swift in Sources */,
+				C99017172A5C6F3800FDD16E /* ContentView.swift in Sources */,
 				C99017022A5C6E0E00FDD16E /* SwiftUI_MVVM_CombineApp.swift in Sources */,
+				C99017132A5C6E5E00FDD16E /* MoviesModel.swift in Sources */,
+				C99017152A5C6EBB00FDD16E /* MovieListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
