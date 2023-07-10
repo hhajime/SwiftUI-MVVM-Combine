@@ -12,7 +12,7 @@ class MovieListViewModel: ObservableObject {
     
     // API call to retrieve movies
     func fetchMovies() {
-        guard let url = URL(string: "https://api.themoviedb.org/3/movie/popular?api_key=<Your API KEY>") else {
+        guard let url = URL(string: "https://api.themoviedb.org/3/movie/popular?api_key=<YOUR API KEY>") else {
             print("error")
             return
         }
